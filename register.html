@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <script src="register.js" defer></script>
+      <form id="form">
+        <label for="username">Username</label>
+        <input type="text" id="username" required/><br />
+        <label for="email">Email</label>
+        <input type="email" id="email" required/><br />
+        <label for="password">Password</label>
+        <input type="password" id="password" required/><br />
+        <label for="retype-password">Retype Password</label>
+        <input type="password" id="retype-password" /><br />
+        <label for="gender">Gender:</label>
+        <select id="gender" name="options" required>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Prefer not to say">Prefer not to say</option>
+        </select><br />
+        <label for="phonenumber">Phone number</label>
+        <input type="number" id="phonenumber" required/><br />
+
+        <input type="submit" id="submit" value="Submit" />
+        <p id="success"></p>
+      </form>
+    </div>
+  </body>
+</html>
